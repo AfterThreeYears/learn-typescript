@@ -7,7 +7,7 @@ const dist = path.resolve(__dirname, './dist');
 const template = path.resolve(__dirname, '../index.html');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/index.ts'),
+  entry: path.resolve(__dirname, './src/basic-type'),
   output: {
     filename: 'main.js',
   },
