@@ -57,4 +57,4 @@ const obj1 = {
 
 getP(obj1, 'a');
 
-getP(obj1, 'c');
+// getP(obj1, 'c');
