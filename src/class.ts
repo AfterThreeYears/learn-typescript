@@ -78,3 +78,37 @@ const c = new C('a');
 console.log(c.name);
 c.name = '2';
 console.log(c.name);
+
+abstract class D {
+  constructor(public name: string) {}
+  abstract getName(): void
+}
+
+class E extends D {
+  constructor(public name: string) {
+    super(name);
+  }
+  getName() {
+    console.log(this.name);
+    
+  }
+}
+
+const e = new E('1');
+e.getName();
+
+abstract class F {
+  abstract _name: string
+  abstract get name(): string
+  abstract set name(value: string)
+}
+
+interface G {
+  type: string
+}
+
+class I implements G {
+  constructor(public type: string) {
+    
+  }
+}
