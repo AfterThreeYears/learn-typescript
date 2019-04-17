@@ -4,10 +4,10 @@ const path = require('path');
 
 const isProd = process.env.NODE_ENV === 'production';
 const dist = path.resolve(__dirname, './dist');
-const template = path.resolve(__dirname, '../index.html');
+const template = path.resolve(__dirname, './index.html');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/symbol'),
+  entry: path.resolve(__dirname, './src/index'),
   output: {
     filename: 'main.js',
   },

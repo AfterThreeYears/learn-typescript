@@ -2,7 +2,6 @@ node_modules
 dist
 package-lock.json
 # for @ -> alexanthony/js-hyperclick, yeah!
-/webpack.config.js
 # .npmrc
 **/.DS_Store
 .npmrc

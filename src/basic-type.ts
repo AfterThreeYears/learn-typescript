@@ -53,6 +53,8 @@ function getLen(target: string | number): number {
     return (target as string).length;
   }
   return target.toString().length;
-} 
+}
 
 console.log(getLen('111'));
+
+export const a = 1;
