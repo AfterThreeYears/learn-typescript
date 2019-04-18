@@ -28,6 +28,7 @@ module.exports = {
     compress: false,
     port: 8089,
     open: true,
+    logTime: true,
   },
   plugins: [
     new CleanWebpackPlugin({

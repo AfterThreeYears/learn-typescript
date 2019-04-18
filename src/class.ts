@@ -81,16 +81,16 @@ console.log(c.name);
 
 abstract class D {
   constructor(public name: string) {}
-  abstract getName(): void
+  public abstract getName(): void;
 }
 
 class E extends D {
   constructor(public name: string) {
     super(name);
   }
-  getName() {
+  public getName() {
     console.log(this.name);
-    
+
   }
 }
 
@@ -98,17 +98,33 @@ const e = new E('1');
 e.getName();
 
 abstract class F {
-  abstract _name: string
+  public abstract _name: string;
   abstract get name(): string
   abstract set name(value: string)
 }
 
 interface G {
-  type: string
+  type: string;
 }
 
 class I implements G {
   constructor(public type: string) {
-    
+
   }
 }
+
+// const create = <T>(c: new() => T): T => {
+//   return new c();
+// };
+
+function create<T>(c: {new(): T; }): T {
+  return new c();
+}
+
+class J {
+  public name: string
+  constructor() {
+    this.name = '1';
+  }
+}
+const j = create(J);
