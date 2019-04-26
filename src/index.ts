@@ -8,6 +8,7 @@ import './advanced-type'
 import advancedType2 from './advanced-type-2';
 import './b';
 import mixin from './mixin';
+import './update';
 
 /// <reference path="./namespace.ts" />
 console.log(advancedType2);
