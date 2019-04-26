@@ -123,36 +123,30 @@ let foo: Foo = {
   age: 18,
 }
 
-interface F {
-  type: 'F'
-  F: number
-}
+// interface Square {
+//   kind: "square";
+//   size: number;
+// }
+// interface Rectangle {
+//   kind: "rectangle";
+//   width: number;
+//   height: number;
+// }
+// interface Circle {
+//   kind: "circle";
+//   radius: number;
+// }
+// type Shape = Square | Rectangle | Circle;
+// function assertNever(x: never): never {
+//   throw new Error("Unexpected object: " + x);
+// }
+// function area(s: Shape) {
+//   switch (s.kind) {
+//       case "square": return s.size * s.size;
+//       case "rectangle": return s.height * s.width;
+//       case "circle": return Math.PI * s.radius ** 2;
+//       default: return assertNever(s); // error here if there are missing cases
+//   }
+// }
 
-interface G1 {
-  type: 'G'
-  G: number
-}
-
-interface H {
-  type: 'H'
-  H: number
-}
-
-type obj = F | G1 | H;
-
-function fff(obj: obj): string {
-  switch (obj.type) {
-    case 'F':
-      return obj.type
-      break;
-    case 'G':
-      return obj.type
-      break;
-    case 'H':
-      return obj.type
-    default:
-      return '';
-  }
-}
-
-// fff({ type: 'F', F: 1 });
+// area({ kind: 'circle', radius: 1 })
